@@ -44,3 +44,9 @@ Invalid IPv4 addresses:
   -- '0 .0.0.0' is invalid
   -- ' 0.0.0.0' is invalid
 ```
+
+# Other Notable Implementations
+
+[skeeto](https://github.com/skeeto) has a very compact and impressively readable version of an IPv4 parser that can be found [here](https://github.com/skeeto/scratch/blob/2af9b076117838b93fc2fddeac423a0ac1985db2/prips/prips.c#L227-L259) (only supports dotted quads).
+
+lwIP has an implementation of an IPv4 parser that is very liberal and supports addresses that can usually be passed to the `ping` command, which is called [ip4addr_aton](https://git.savannah.nongnu.org/cgit/lwip.git/tree/src/core/ipv4/ip4_addr.c?h=STABLE-2_1_x#n133).
