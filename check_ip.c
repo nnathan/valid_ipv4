@@ -34,7 +34,7 @@ bool is_valid_ipv4(char *addr)
 {
     if (!addr)
     {
-        return NULL;
+        return false;
     }
 
     char *start = addr;
